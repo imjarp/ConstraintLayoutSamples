@@ -16,6 +16,24 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Example_Two_Activity"
+            android:label="@string/title_activity_example__two_"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jarp.constraintlayoutsamples.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".HelloWorldActivity"
+            android:label="@string/title_activity_hello_world"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jarp.constraintlayoutsamples.MainActivity"/>
+        </activity>
     </application>
 
 </manifest>

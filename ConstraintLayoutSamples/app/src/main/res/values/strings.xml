@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ConstraintLayoutSamples</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="example_2"> Example 2</string>
+    <string name="title_activity_example__two_">Example_Two_Activity</string>
+    <string name="montreal_content_descp">Montreal City Image</string>
+    <string name="title_activity_hello_world">HelloWorldActivity</string>
+
 </resources>
