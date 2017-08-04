@@ -5,5 +5,6 @@
     <string name="title_activity_example__two_">Example_Two_Activity</string>
     <string name="montreal_content_descp">Montreal City Image</string>
     <string name="title_activity_hello_world">HelloWorldActivity</string>
+    <string name="big_text">I AM BIG</string>
 
 </resources>
