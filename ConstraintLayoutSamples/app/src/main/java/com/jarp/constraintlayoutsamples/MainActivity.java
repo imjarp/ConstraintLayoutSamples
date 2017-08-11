@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         findViewById(R.id.button).setOnClickListener(this);
         findViewById(R.id.button2).setOnClickListener(this);
+        findViewById(R.id.button3).setOnClickListener(this);
 
 
     }
@@ -25,7 +26,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this,HelloWorldActivity.class));
                 return;
             case R.id.button2:
-                startActivity(new Intent(MainActivity.this,HelloWorldActivity.class));
+                startActivity(new Intent(MainActivity.this,Example_Two_Activity.class));
+                return;
+
+            case R.id.button3:
+                startActivity(new Intent(MainActivity.this,ExampleThreeActivity.class));
                 return;
             default:
                 Toast.makeText(MainActivity.this,"Unknown click view",Toast.LENGTH_SHORT).show();

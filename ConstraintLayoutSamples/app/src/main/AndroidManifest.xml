@@ -34,6 +34,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.jarp.constraintlayoutsamples.MainActivity"/>
         </activity>
+        <activity
+            android:name=".ExampleThreeActivity"
+            android:label="@string/title_activity_example_three"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jarp.constraintlayoutsamples.MainActivity"/>
+        </activity>
     </application>
 
 </manifest>
