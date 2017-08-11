@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Example_Two_Activity"
+            android:name=".BiasActivity"
             android:label="@string/title_activity_example__two_"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -35,8 +35,17 @@
                 android:value="com.jarp.constraintlayoutsamples.MainActivity"/>
         </activity>
         <activity
-            android:name=".ExampleThreeActivity"
+            android:name=".InferenceActivity"
             android:label="@string/title_activity_example_three"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jarp.constraintlayoutsamples.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".RealExampleActivity"
+            android:label="@string/title_activity_chain"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
