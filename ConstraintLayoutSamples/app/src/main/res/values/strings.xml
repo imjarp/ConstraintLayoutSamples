@@ -10,5 +10,7 @@
     <string name="big_text">I AM BIG</string>
     <string name="title_activity_example_three">ExampleThreeActivity</string>
     <string name="title_activity_chain">ChainActivity</string>
+    <string name="chain_activity">Chain Activity</string>
+    <string name="title_activity_guide_lines">GuideLinesActivity</string>
 
 </resources>

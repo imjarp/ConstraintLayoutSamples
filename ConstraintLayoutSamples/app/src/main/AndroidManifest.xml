@@ -52,6 +52,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.jarp.constraintlayoutsamples.MainActivity"/>
         </activity>
+        <activity
+            android:name=".ChainActivity"
+            android:label="@string/title_activity_chain"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jarp.constraintlayoutsamples.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".GuideLinesActivity"
+            android:label="@string/title_activity_guide_lines"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jarp.constraintlayoutsamples.MainActivity"/>
+        </activity>
     </application>
 
 </manifest>

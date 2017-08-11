@@ -9,7 +9,7 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/helloworld_btn"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bias_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
@@ -32,10 +32,10 @@
         android:text="@string/example_2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"/>
+        app:layout_constraintTop_toBottomOf="@+id/helloworld_btn"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/inferece_btn"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginLeft="8dp"
@@ -44,17 +44,29 @@
         android:text="@string/example_3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"/>
+        app:layout_constraintTop_toBottomOf="@+id/bias_btn"/>
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/real_world_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/example_real"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"/>
+        app:layout_constraintTop_toBottomOf="@+id/inferece_btn"/>
+
+    <Button
+        android:id="@+id/chain_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/chain_activity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/real_world_btn"/>
 
 
 </android.support.constraint.ConstraintLayout>

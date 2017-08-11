@@ -8,33 +8,44 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    int[] validButtons = new int[]{
+            R.id.helloworld_btn,
+            R.id.bias_btn,
+            R.id.inferece_btn,
+            R.id.real_world_btn,
+            R.id.chain_btn
+
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.button).setOnClickListener(this);
-        findViewById(R.id.button2).setOnClickListener(this);
-        findViewById(R.id.button3).setOnClickListener(this);
-
-
-
+        for (int idx = 0; idx < validButtons.length; idx++) {
+            findViewById(validButtons[idx]).setOnClickListener(this);
+        }
     }
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.button:
-                startActivity(new Intent(MainActivity.this,HelloWorldActivity.class));
+        switch (view.getId()) {
+            case R.id.helloworld_btn:
+                startActivity(new Intent(MainActivity.this, HelloWorldActivity.class));
                 return;
-            case R.id.button2:
-                startActivity(new Intent(MainActivity.this,BiasActivity.class));
+            case R.id.bias_btn:
+                startActivity(new Intent(MainActivity.this, BiasActivity.class));
                 return;
-
-            case R.id.button3:
-                startActivity(new Intent(MainActivity.this,InferenceActivity.class));
+            case R.id.inferece_btn:
+                startActivity(new Intent(MainActivity.this, InferenceActivity.class));
+                return;
+            case R.id.real_world_btn:
+                startActivity(new Intent(MainActivity.this, RealExampleActivity.class));
+                return;
+            case R.id.chain_btn:
+                startActivity(new Intent(MainActivity.this, ChainActivity.class));
                 return;
             default:
-                Toast.makeText(MainActivity.this,"Unknown click view",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Unknown click view", Toast.LENGTH_SHORT).show();
         }
     }
 }
