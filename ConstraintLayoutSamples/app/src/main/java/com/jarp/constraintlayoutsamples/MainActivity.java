@@ -13,7 +13,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             R.id.bias_btn,
             R.id.inferece_btn,
             R.id.real_world_btn,
-            R.id.chain_btn
+            R.id.chain_btn,
+            R.id.guidelines_btn
 
     };
 
@@ -43,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return;
             case R.id.chain_btn:
                 startActivity(new Intent(MainActivity.this, ChainActivity.class));
+                return;
+            case R.id.guidelines_btn:
+                startActivity(new Intent(MainActivity.this, GuideLinesActivity.class));
                 return;
             default:
                 Toast.makeText(MainActivity.this, "Unknown click view", Toast.LENGTH_SHORT).show();
